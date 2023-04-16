@@ -3,6 +3,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import BlogHeader from '../components/BlogHeader.astro';
 import BlogPostPreview from '../components/BlogPostPreview.astro';
+import Footer from '../components/Footer.astro';
 import { SITE } from '../config';
 
 // Component Script:
@@ -83,4 +84,5 @@ allPosts = allPosts.sort((a, b) => new Date(b.frontmatter.publishDate).valueOf()
 			</footer>
 		</div>
 	</body>
+  <Footer />
 </html>
